@@ -1,0 +1,9 @@
+{
+  "name": "MyoTrack EMG Performance",
+  "description": "Profesyonel EMG tabanlı kas aktivasyon takip ve antrenman analiz uygulaması.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "bluetooth"
+  ]
+}

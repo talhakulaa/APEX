@@ -1,0 +1,62 @@
+
+:root {
+  /* Karanlık Mod Varsayılanları */
+  --bg-primary: #090e1a;
+  --bg-secondary: #131c31;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #475569;
+  --accent: #22c55e;
+  --accent-secondary: #3b82f6;
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-bg: rgba(30, 41, 59, 0.7);
+  --input-bg: rgba(15, 23, 42, 0.5);
+  --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.theme-light {
+  --bg-primary: #f1f5f9;
+  --bg-secondary: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --accent: #16a34a;
+  --accent-secondary: #2563eb;
+  --card-border: rgba(0, 0, 0, 0.06);
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --input-bg: rgba(241, 245, 249, 0.8);
+  --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+}
+
+.glass-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow);
+  color: var(--text-primary);
+}
+
+.text-main { color: var(--text-primary); }
+.text-sub { color: var(--text-secondary); }
+.text-dim { color: var(--text-muted); }
+.bg-app { background-color: var(--bg-primary); }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 10px;
+}
+
+.active-neon {
+  box-shadow: 0 0 20px var(--accent);
+}
