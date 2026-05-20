@@ -1,20 +1,57 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# APEX — MyoTrack EMG Performance
 
-# Run and deploy your AI Studio app
+APEX, EMG tabanlı kas aktivasyonu takibi ve antrenman analizi için geliştirilmiş modern bir web uygulamasıdır. Uygulama; ağırlık ve kardiyo antrenmanlarında kas aktivasyonunu takip etmeyi, sensör/modül yerleşimini yönetmeyi, canlı EMG verisi izlemeyi ve antrenman sonrası performans analizleri oluşturmayı amaçlar.
 
-This contains everything you need to run your app locally.
+## Live Demo
 
-View your app in AI Studio: https://ai.studio/apps/drive/1tGlQ0Kxd-WXqXtSx-BSfROvzEHg7eLS5
+https://apex-pied.vercel.app
 
-## Run Locally
+## Proje Hakkında
 
-**Prerequisites:**  Node.js
+APEX, sporcuların antrenman sırasında kas aktivasyonlarını daha anlaşılır şekilde takip edebilmesi için tasarlanmıştır. Uygulama 4 farklı EMG modülü üzerinden kas aktivasyonu verilerini simüle eder veya takip eder. Kullanıcı seçtiği antrenman türüne ve vücut bölgesine göre modülleri yerleştirir, kalibrasyon sürecini tamamlar ve canlı EMG akışını izleyerek antrenmanını kaydeder.
 
+Bu proje özellikle şu amaçlara odaklanır:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Kas aktivasyonunu anlık olarak görselleştirmek
+- Antrenman yoğunluğunu ve set bilgisini takip etmek
+- Bölgesel kas gelişimini analiz etmek
+- Kullanıcının geçmiş antrenmanlarını kaydetmek
+- Günlük, haftalık ve aylık gelişim grafikleri sunmak
+
+## Özellikler
+
+- Kullanıcı profil sistemi
+- Ağırlık ve kardiyo antrenman modu
+- Göğüs, sırt, omuz, kol, karın ve bacak bölgesi seçimi
+- 4 modüllü EMG sensör yerleşim akışı
+- MVC kalibrasyon adımı
+- Canlı EMG stream grafiği
+- Kas aktivasyonu çizelgesi
+- Set sayacı ve süre takibi
+- Antrenman sonrası özet ekranı
+- Ortalama aktivasyon, zirve aktivasyon ve kalite skoru
+- Simetri indeksi ve yorgunluk analizi
+- Günlük, haftalık ve aylık gelişim takibi
+- Antrenman günlüğü ve not ekleme
+- Açık/koyu tema desteği
+- Demo mod ile sensörsüz kullanım
+- PWA desteği
+
+## Kullanılan Teknolojiler
+
+- React
+- TypeScript
+- Vite
+- Recharts
+- Vite PWA
+- LocalStorage
+- CSS
+
+## Kurulum
+
+Projeyi kendi bilgisayarında çalıştırmak için aşağıdaki adımları takip edebilirsin.
+
+### 1. Repoyu klonla
+
+```bash
+git clone https://github.com/talhakulaa/APEX.git
